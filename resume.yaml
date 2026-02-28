@@ -15,29 +15,65 @@ contact:
     url: mailto:patrick@patrickgatewood.com
 
 work_experience:
-  - company: Square
+  - company: Square (Block, Inc.)
     title: Senior Software Engineer
     dates: August 2022 - February 2026
     highlights:
       - >
-        Identified an unstable component underpinning every sale made via Square's suite of point of sale apps.
-        Initiated and led a mission-critical effort to install compile-time safeguards for high-traffic Core Data fetching
-        operations used by every Square seller. Reduced Core Data query development and code review time by 40% by
-        architecting, implementing, shipping, and open-sourcing a declarative, type-safe way to create Core Data
-        predicates. Prevented dozens of Core Data bugs from entering the codebase and affecting Square merchants.
+        Identified an unstable Core Data pattern underpinning every transaction across Square's suite of point of sale apps.
+        Led a multi-phase effort to install compile-time safeguards for high-traffic fetching operations; architected,
+        shipped, and open-sourced a declarative, type-safe predicate DSL adopted across Square's iOS codebases.
+        Introduced the first Swift macro into the codebase to generate boilerplate and enforce compile-time checks.
+        Reduced Core Data query development and code review time by 40%.
       - >
-        Founded Copilot for Xcode working group to fill generative AI tooling gap for iOS engineers; spearheaded
-        security review; sourced legal approval; configured, announced, and distributed to all Block iOS engineers.
+        Served as iOS DRI for OCR-Assisted Receive, a cross-functional feature enabling Square sellers to scan invoices
+        with their device camera instead of manually entering inventory. Authored engineering design documents, coordinated
+        release plans with PM, design, and QA through product and design ownership changes, and scoped an ambiguous
+        greenfield project into achievable milestones. Alpha testing party surfaced only 2 P3 bugs. Laid the foundation for
+        Square's broader OCR platform initiative. Reduced inventory intake time by 75%.
       - >
-        Introduced the first Swift macro into Square's codebase and evangelized Swift 5.9 macro usage to generate
-        boilerplate code and perform static, compile-time checks for complex and ceremonious routines.
+        Led end-to-end migration of Square's most complex seller-facing screen from a mix of Objective-C, UIKit,
+        and multiple internal UI frameworks into a modern, unified Swift architecture. Untangled 12+ years of tech debt,
+        broke the project into phased milestones, and led a team of 3 engineers through critical components. Shipped with
+        zero P0/P1/P2 bugs; maintained all existing tests and raised coverage from 44% to 95%. Delivered a dramatically
+        more stable seller experience and cut new feature development time by ~3x through modern, composable architecture.
       - >
-        Identified a core Square localization REST API that had lost its owning team in an organizational shuffle.
-        Organized decision-making & knowledge transfer meetings; documented & announced ownership decision.
-      - Led a cross-organizational, multi-stage rollout of a jointly-owned Checkout feature visible to every seller.
+        Created an SPM-Bazel dual-module CLI tool that generates hybrid Swift Package modules with full Bazel
+        compatibility, enabling SwiftUI Previews and isolated development workflows across Square's iOS monorepo.
+        Reduced UI iteration feedback loops from minutes to sub-second; gave a lightning talk evangelizing the pattern &
+        supported several teams in adopting the pattern.
       - >
-        Trivialized arduous documentation discoverability by advocating for and leading an initiative to consolidate
-        disparate documentation into a single unified repository. Reduced doc discovery time from minutes to seconds.
+        Pioneered AI-assisted development at Block by founding a Copilot for Xcode working group before generative AI
+        tooling was industry-standard. Navigated security review and legal approval; configured and distributed to all
+        Block iOS engineers. Helped establish the foundation for the organization's shift toward AI-first engineering workflows.
+      - >
+        Rescued an orphaned localization REST API after a reorg by organizing knowledge transfer meetings and announcing
+        ownership. Consolidated scattered documentation into a single searchable repository, reducing discovery time
+        from minutes to seconds.
+      - >
+        Championed Square's migration from Jira to Linear from the ground up: unblocked a two-year-old data migration
+        integration that had stalled without ownership; escalated across security, IT, and engineering leadership; built
+        organizational momentum where none existed. Internal DX surveys ranked Jira as engineers' #1 pain point. Drove a
+        company-wide pilot that led to Square's full adoption of Linear. Leadership cited this work when making the
+        final decision to switch to Linear.
+
+  - company: Robot Hand, LLC
+    title: Owner / Sole Engineer
+    dates: 2022 - Present
+    highlights:
+      - >
+        Co-designed and solo-engineered Constellation Quest, an offline-first scavenger hunt PWA for GRiZ's Seven Stars
+        Festival (~23,500 attendees). Shaped the end-to-end fan experience beyond just the app, influencing signage,
+        reward mechanics, and on-site interactions. Built with Vite, TypeScript, and localStorage for zero connectivity
+        environments. Shipped ahead of schedule with zero downtime; became a fan-favorite highlight with organic
+        community engagement across Reddit.
+      - >
+        Designed, built, and shipped Chosen One to the App Store: a multi-touch finger-picker app for game night.
+        Engineered custom multi-touch tracking, animated ring themes with StoreKit 2 in-app purchases, and polished
+        haptic feedback. Zero accounts, zero ads, focused on delightful UX that makes a simple moment feel special.
+      - >
+        Built and open-sourced developer tools solving real workflow pain points: taipo (AI-powered shell typo fixer),
+        slog (automated Simulator login CLI, and Emochi (system-wide emoji picker for macOS).
 
   - company: WillowTree, LLC
     dates: July 2018 - August 2022
@@ -59,77 +95,23 @@ work_experience:
           - >
             Created and open-sourced an automated Changelog Generator saving dozens of hours of time spent each
             release cycle resolving changelog merge conflicts.
-          - Organized and led product and engineering discussions around feature design and video stack architecture.
           - >
-            Evangelized SharePlay, created and demoed a proof of concept to VP and C-level stakeholders; procured
-            program-level buy-in. Received official feedback from Fox's VP of Video Platforms and WillowTree VPs.
-          - >
-            Invested in growth of team members by mentoring newer engineers and providing opportunities to own larger,
-            complex features and communicate with external clients.
-
-      - name: WillowTree Live Apps Team
-        highlights:
-          - Onboarded & maintained 10 inherited, mature codebases and ingested CI/CD pipelines into WillowTree's stack.
-          - >
-            Integrated an emergency feature request for Wyndham Hotels to provide COVID-19 guidance for guests and
-            was named by the client as a reason for a contract renewal.
+            Recognized a time sink of 10 person-hours per sprint spent resolving .xcodeproj merge conflicts introduced by a
+            50-person team. Pitched a generated project file solution and converted an 80,000-line .pbxproj file into a
+            200-line YAML file used across all 27 white-label apps using XcodeGen.
 
       - name: Vocable AAC
         highlights:
           - >
             Co-designed and implemented a hands-free head tracking and virtual cursor system in ARKit to empower
             speech-impaired individuals to communicate with their loved ones.
-          - Implemented localization and wrote contributing guidelines to enable as many localizations as possible.
-          - >
-            Open-sourced all project materials to promote community collaboration and helmed early communication with
-            open-source contributors.
           - 2021 Webby Award winner and honoree; 2020 W3 Award winner in 3 categories.
 
-      - name: FOX Television Stations
-        highlights:
-          - >
-            Created 8 new TV station apps using a custom white-label app architecture; scaled CI infrastructure to support
-            27 white-label apps.
-          - >
-            Recognized a time sink of 10 person-hours per sprint spent resolving .xcodeproj merge conflicts introduced by a
-            50-person team working on a large shared codebase. Pitched a generated project file solution and converted an
-            80,000-line .pbxproj file into a 200-line YAML file used across all 27 white-label apps using XcodeGen.
-
-      - name: Health & Wellness Client
-        highlights:
-          - >
-            Addressed team member burnout upon joining the team and renewed team's outlook on the project by
-            encouraging use of PTO, organizing team-building sessions, and helping build a sustainable team culture.
-          - Converted the red-status project into a well-performing team; delivered a HealthKit rewards feature on-time.
-
-      - name: Locus Health
-        highlights:
-          - Discovered, raised, and fixed a privacy issue where storage of health data did not meet encryption guidelines.
-          - Collaborated on architecture and code review for a 2 factor authentication feature using Amazon Cognito.
-
-      - name: CFA Institute
-        highlights:
-          - Served as lead iOS engineer and point of contact for 8 months.
-          - Reduced regression testing time by 50% by creating an automated test suite.
-          - >
-            Architected full-stack implementation of Search and Member Renewal features; delivered backend API
-            architecture to client engineers; implemented iOS and Android client-side implementations using Xamarin.
-          - Organized ART discussions at SAFe PI Planning and simplified Search estimation by one increment.
-
-      - name: PepsiCo
-        highlights:
-          - Consolidated redundant API call implementations into a succinct, generic API client.
-          - Managed Swift 4 migration and evangelized using Codable types; removed a third-party JSON decoding library.
-          - Worked with design to optimize Lottie animations for supported devices.
-
-  - company: Robot Hand, LLC
-    title: Owner / Sole Engineer
-    dates: 2022 - Present
-    projects:
-      - name: Emochi
-        description: A system-wide emoji picker for macOS, summoned just by typing a colon and an emoji name.
-      - name: Recipe Nabber
-        description: A Safari extension for iOS that skips the life stories of recipe authors and renders only recipe content.
+    additional_clients:
+      - Wyndham Hotels
+      - PepsiCo
+      - CFA Institute
+      - Locus Health
 
 education:
   - institution: Virginia Polytechnic Institute and State University
@@ -140,6 +122,7 @@ skills:
   mobile_development:
     - Swift
     - SwiftUI
+    - Swift Macros
     - UIKit
     - AVFoundation
     - AppKit
@@ -150,20 +133,29 @@ skills:
     - tvOS
     - ARKit
     - StoreKit 2
+    - WidgetKit
+    - App Intents
+    - Live Activities
+    - Accessibility / VoiceOver
     - CocoaPods
     - SPM
     - Bazel
     - fastlane
-    - ReactiveSwift
+    - Protocol Buffers
   tools:
     - git
+    - GitHub Actions
+    - LaunchDarkly
+    - Datadog
+    - Bugsnag
+    - Linear
+    - Jira
     - Charles Proxy
     - Proxyman
-    - Azure DevOps
-    - GitHub Actions
-    - Jenkins
-    - Jira
     - Bash
-    - GitHub Copilot
-    - Coda/Notion Development
+    - Homebrew
+    - Vite
+    - TypeScript
+    - Copilot for Xcode
+    - Cursor
     - Caddy
