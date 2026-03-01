@@ -123,17 +123,18 @@ work_experience:
             Architected Search and Member Renewal end-to-end for CFA Institute, delivering backend API architecture to
             client engineers and implementing iOS and Android clients with Xamarin.
 
+      - name: Vitality Group
+        highlights:
+          - >
+            Joined a red-status Health & Wellness engagement, addressed burnout through team-health interventions and
+            team-building sessions, and rebuilt a sustainable delivery cadence. Converted project trajectory and delivered a
+            HealthKit rewards feature on time.
+
       - name: Locus Health
         highlights:
           - >
             Discovered, raised, and fixed a privacy issue where stored health data did not meet encryption guidelines, then
             collaborated on architecture and code review for an Amazon Cognito 2-factor authentication rollout.
-
-      - name: PepsiCo
-        highlights:
-          - >
-            Consolidated redundant API call implementations into a generic API client, led Swift 4 migration to Codable
-            types, and removed a third-party JSON decoding library.
 
       - name: Vocable AAC
         highlights:
