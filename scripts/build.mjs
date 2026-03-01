@@ -15,8 +15,7 @@ import { DIST_DIR, HTML_OUT, PDF_OUT, renderHtml } from "./render.mjs";
 
 async function main() {
   const includePhone = process.env.RESUME_INCLUDE_PHONE === "1";
-  const privatePdfOut = PDF_OUT.replace(/\.pdf$/, "-with-phone.pdf");
-  const pdfOut = includePhone ? privatePdfOut : PDF_OUT;
+  const pdfOut = PDF_OUT;
   const ROOT_PDF_OUT = path.resolve(DIST_DIR, "..", "PatrickGatewoodResume.pdf");
   const html = renderHtml({ includePhone });
 

@@ -37,9 +37,9 @@ work_experience:
         44% to 95%, and cut new feature development time by ~3x based on observed team throughput.
       - >
         Established an SPM-Bazel dual-module CLI standard for hybrid Swift Package modules in Square's bazel-based iOS monorepo.
-        Built and rolled out tooling to enable SwiftUI Previews and isolated development workflows, then enabled adoption
-        through a lightning talk and direct support for partner teams. Reduced UI iteration loops from minutes to sub-second
-        based on observed local build and preview cycles.
+        Built and rolled out tooling to enable SwiftUI Previews and isolated development workflows. Evangelized the new
+        capabilities and drove adoption by directly onboarding and supporting partner teams. Reduced UI iteration loops
+        from minutes to seconds based on observed local build and preview cycles.
       - >
         Pioneered AI-assisted development at Block by founding a Copilot for Xcode working group and setting direction for
         secure adoption before generative AI tooling became standard internally. Drove security and legal review, then
@@ -69,8 +69,10 @@ work_experience:
         zero ads. Implemented custom multi-touch tracking, animated ring themes via StoreKit 2 in-app purchases, and
         tuned haptics for reliable tactile feedback. Delivered a polished, low-friction experience centered on repeat social use.
       - >
-        Built and open-sourced developer tools to standardize local workflows: taipo (AI-powered shell typo fixer), slog
-        (automated Simulator login CLI), and Emochi (system-wide emoji picker for macOS).
+        Maintain full product ownership and demonstrate continuous delivery by independently identifying friction points
+        and shipping a portfolio of tools and apps: Recipe Nabber (iOS Safari extension to extract recipes),
+        Emochi (system-wide macOS emoji picker), slog (automated Simulator login CLI), taipo (AI shell typo fixer),
+        and an automated Changelog Generator.
 
   - company: WillowTree, LLC
     dates: July 2018 - August 2022
@@ -79,20 +81,22 @@ work_experience:
       - name: FOX Consumer Products & Engineering
         highlights:
           - >
-            Architected and implemented tvOS support and cross-platform features for FOX's shared mobile video player SDK,
-            enabling reuse across the FOX app suite.
-          - >
-            Served as tvOS tech lead for FOX app suite integrations (FOX Now, Sports, Weather, Nation, News
-            International), enabling partner app teams to ship SDK integrations with consistent patterns.
+            Architected cross-platform features and served as tvOS tech lead for FOX's shared video player SDK.
+            Drove adoption across the entire FOX app suite (FOX Now, Sports, Weather, Nation, News International)
+            by establishing consistent integration patterns and enabling partner teams to ship reliable video
+            experiences at scale.
           - >
             Automated key continuous delivery pipeline steps for FOX video SDK releases and reduced release cycle time by
             25% based on pipeline data.
           - >
-            Built and open-sourced an automated Changelog Generator for FOX release workflows, saving dozens of hours
-            each cycle that had been spent resolving changelog merge conflicts.
+            Built and open-sourced an automated Changelog Generator for FOX release workflows, eliminating a recurring
+            merge conflict tax on every pull request and saving an estimated hour of manual resolution per release cycle.
           - >
-            Evangelized SharePlay by building and demoing a proof of concept to FOX and WillowTree VP/C-level
-            stakeholders, securing program-level buy-in.
+            Evangelized SharePlay, created and demoed a proof of concept to VP and C-level stakeholders; procured
+            program-level buy-in. Received official feedback from Fox's VP of Video Platforms and WillowTree VPs.
+          - >
+            Invested in growth of team members by mentoring newer engineers and providing opportunities to own larger,
+            complex features and communicate with external clients.
 
       - name: FOX Television Stations
         highlights:
@@ -116,7 +120,7 @@ work_experience:
       - name: CFA Institute
         highlights:
           - >
-            Served as lead iOS engineer and point of contact for CFA Institute for 8 months, setting delivery direction for
+            Served as lead iOS engineer for CFA Institute for 8 months, setting delivery direction for
             the engagement.
           - >
             Built an automated test suite for CFA Institute and reduced regression testing time by 50%; architected Search
@@ -183,9 +187,13 @@ skills:
   agentic_engineering:
     - Agentic Workflows
     - Agent Orchestration
-    - MCP & MCP Development
+    - Context Engineering
+    - MCP & Skill Development
     - LLM Integration
     - Cursor
+    - Claude Code
+    - Antigravity
+    - Goose
     - GitHub Copilot
   tools:
     - git
