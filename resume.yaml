@@ -20,60 +20,57 @@ work_experience:
     dates: August 2022 - February 2026
     highlights:
       - >
-        Identified an unstable Core Data pattern underpinning every transaction across Square's suite of point of sale apps.
-        Led a multi-phase effort to install compile-time safeguards for high-traffic fetching operations; architected,
-        shipped, and open-sourced a declarative, type-safe predicate DSL adopted across Square's iOS codebases.
-        Introduced the first Swift macro into the codebase to generate boilerplate and enforce compile-time checks.
-        Reduced Core Data query development and code review time by 40%.
+        Identified an unstable Core Data pattern underpinning every transaction across Square's point of sale apps and set
+        direction on a multi-phase hardening effort. Architected, shipped, and open-sourced a declarative, type-safe
+        predicate DSL, plus Square's first Swift macro to remove boilerplate and enforce compile-time query checks.
+        Reduced Core Data query development and code review time by 40% based on internal cycle-time data.
       - >
-        Served as iOS DRI for OCR-Assisted Receive, a cross-functional feature enabling Square sellers to scan invoices
-        with their device camera instead of manually entering inventory. Authored engineering design documents, coordinated
-        release plans with PM, design, and QA through product and design ownership changes, and scoped an ambiguous
-        greenfield project into achievable milestones. Alpha testing party surfaced only 2 P3 bugs. Laid the foundation for
-        Square's broader OCR platform initiative. Reduced inventory intake time by 75%.
+        Owned iOS delivery as DRI for OCR-Assisted Stock Intake, led a 3-engineer iOS team, and translated ambiguous
+        product and design inputs into engineering design docs, phased milestones, and execution strategy.
+        Implemented core feature work while driving cross-functional release execution through PM, design, and QA ownership
+        changes, and established the technical foundation for Square's broader OCR platform initiative. Alpha testing surfaced
+        only 2 P3 bugs, and launch measurements showed seller inventory intake time down 75%.
       - >
-        Led end-to-end migration of Square's most complex seller-facing screen from a mix of Objective-C, UIKit,
-        and multiple internal UI frameworks into a modern, unified Swift architecture. Untangled 12+ years of tech debt,
-        broke the project into phased milestones, and led a team of 3 engineers through critical components. Shipped with
-        zero P0/P1/P2 bugs; maintained all existing tests and raised coverage from 44% to 95%. Delivered a dramatically
-        more stable seller experience and cut new feature development time by ~3x through modern, composable architecture.
+        Drove end-to-end migration of Square's most complex seller-facing screen from Objective-C, UIKit, and multiple
+        internal UI frameworks to a unified Swift architecture. Broke 12+ years of tech debt into phased milestones and led
+        3 engineers through delivery while preserving existing tests. Shipped with zero P0/P1/P2 bugs, raised coverage from
+        44% to 95%, and cut new feature development time by ~3x based on observed team throughput.
       - >
-        Created an SPM-Bazel dual-module CLI tool that generates hybrid Swift Package modules with full Bazel
-        compatibility, enabling SwiftUI Previews and isolated development workflows across Square's iOS monorepo.
-        Reduced UI iteration feedback loops from minutes to sub-second; gave a lightning talk evangelizing the pattern &
-        supported several teams in adopting the pattern.
+        Established an SPM-Bazel dual-module CLI standard for hybrid Swift Package modules in Square's bazel-based iOS monorepo.
+        Built and rolled out tooling to enable SwiftUI Previews and isolated development workflows, then enabled adoption
+        through a lightning talk and direct support for partner teams. Reduced UI iteration loops from minutes to sub-second
+        based on observed local build and preview cycles.
       - >
-        Pioneered AI-assisted development at Block by founding a Copilot for Xcode working group before generative AI
-        tooling was industry-standard. Navigated security review and legal approval; configured and distributed to all
-        Block iOS engineers. Helped establish the foundation for the organization's shift toward AI-first engineering workflows.
+        Pioneered AI-assisted development at Block by founding a Copilot for Xcode working group and setting direction for
+        secure adoption before generative AI tooling became standard internally. Drove security and legal review, then
+        rolled out configuration and access to all Block iOS engineers. Helped establish the foundation for the
+        organization's shift toward AI-first engineering workflows.
       - >
-        Rescued an orphaned localization REST API after a reorg by organizing knowledge transfer meetings and announcing
-        ownership. Consolidated scattered documentation into a single searchable repository, reducing discovery time
-        from minutes to seconds.
+        Rescued an orphaned localization REST API after a reorg risked service drift by establishing ownership and driving
+        knowledge transfer sessions. Standardized scattered docs into a single searchable source of truth. Reduced
+        discovery time from minutes to seconds based on engineer feedback.
       - >
-        Championed Square's migration from Jira to Linear from the ground up: unblocked a two-year-old data migration
-        integration that had stalled without ownership; escalated across security, IT, and engineering leadership; built
-        organizational momentum where none existed. Internal DX surveys ranked Jira as engineers' #1 pain point. Drove a
-        company-wide pilot that led to Square's full adoption of Linear. Leadership cited this work when making the
-        final decision to switch to Linear.
+        Drove Square's Jira-to-Linear migration by unblocking a two-year-stalled data integration and coordinating security,
+        IT, and engineering leadership. Established pilot scope, rollout direction, and adoption momentum while internal DX
+        surveys ranked Jira as engineers' #1 pain point. Pilot results led to full Square adoption of Linear, and leadership
+        cited this work in the final switch decision.
 
   - company: Robot Hand, LLC
     title: Owner / Sole Engineer
     dates: 2022 - Present
     highlights:
       - >
-        Co-designed and solo-engineered Constellation Quest, an offline-first scavenger hunt PWA for GRiZ's Seven Stars
-        Festival (~23,500 attendees). Shaped the end-to-end fan experience beyond just the app, influencing signage,
-        reward mechanics, and on-site interactions. Built with Vite, TypeScript, and localStorage for zero connectivity
-        environments. Shipped ahead of schedule with zero downtime; became a fan-favorite highlight with organic
-        community engagement across Reddit.
+        Co-defined and solo-engineered Constellation Quest, an offline-first scavenger hunt PWA for GRiZ's Seven Stars
+        Festival (~23,500 attendees). Set direction for both product and on-site execution, including signage, reward
+        mechanics, and interaction flows in zero-connectivity environments. Built with Vite, TypeScript, and localStorage;
+        shipped ahead of schedule with zero downtime and became a fan-favorite highlight with organic Reddit engagement.
       - >
-        Designed, built, and shipped Chosen One to the App Store: a multi-touch finger-picker app for game night.
-        Engineered custom multi-touch tracking, animated ring themes with StoreKit 2 in-app purchases, and polished
-        haptic feedback. Zero accounts, zero ads, focused on delightful UX that makes a simple moment feel special.
+        Designed and shipped Chosen One to the App Store, defining a focused game-night utility with zero accounts and
+        zero ads. Implemented custom multi-touch tracking, animated ring themes via StoreKit 2 in-app purchases, and
+        tuned haptics for reliable tactile feedback. Delivered a polished, low-friction experience centered on repeat social use.
       - >
-        Built and open-sourced developer tools solving real workflow pain points: taipo (AI-powered shell typo fixer),
-        slog (automated Simulator login CLI, and Emochi (system-wide emoji picker for macOS).
+        Built and open-sourced developer tools to standardize local workflows: taipo (AI-powered shell typo fixer), slog
+        (automated Simulator login CLI), and Emochi (system-wide emoji picker for macOS).
 
   - company: WillowTree, LLC
     dates: July 2018 - August 2022
@@ -87,24 +84,24 @@ work_experience:
     projects:
       - name: FOX Consumer Products & Engineering
         highlights:
-          - Architected and implemented tvOS support and cross-platform features for a mobile video player SDK.
+          - Architected and implemented tvOS support and cross-platform features for a shared mobile video player SDK.
           - >
-            Served as tvOS tech lead and provided video SDK integration support for FOX app suite engineers (FOX Now,
-            Sports, Weather, Nation, News International) as a FOX-embedded resource.
-          - Automated multiple continuous delivery pipeline steps and reduced release cycle time by 25%.
+            Served as tvOS tech lead for FOX app suite integrations (FOX Now, Sports, Weather, Nation, News
+            International), enabling partner app teams as an embedded SDK resource.
+          - Automated key continuous delivery pipeline steps and reduced release cycle time by 25% based on pipeline data.
           - >
-            Created and open-sourced an automated Changelog Generator saving dozens of hours of time spent each
-            release cycle resolving changelog merge conflicts.
+            Built and open-sourced an automated Changelog Generator, standardizing release notes and saving dozens of
+            hours each cycle that had been spent resolving changelog merge conflicts.
           - >
-            Recognized a time sink of 10 person-hours per sprint spent resolving .xcodeproj merge conflicts introduced by a
-            50-person team. Pitched a generated project file solution and converted an 80,000-line .pbxproj file into a
-            200-line YAML file used across all 27 white-label apps using XcodeGen.
+            Identified a recurring 10 person-hour per sprint cost from .xcodeproj merge conflicts on a 50-person team and
+            set direction on generated project files. Rolled out XcodeGen by replacing an ~80,000-line .pbxproj with a
+            ~200-line YAML definition adopted across 27 white-label apps.
 
       - name: Vocable AAC
         highlights:
           - >
-            Co-designed and implemented a hands-free head tracking and virtual cursor system in ARKit to empower
-            speech-impaired individuals to communicate with their loved ones.
+            Co-defined and implemented a hands-free ARKit head-tracking and virtual-cursor system to enable communication
+            for speech-impaired individuals.
           - 2021 Webby Award winner and honoree; 2020 W3 Award winner in 3 categories.
 
     additional_clients:
