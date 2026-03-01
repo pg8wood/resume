@@ -54,7 +54,7 @@
    Design Tokens
    ═══════════════════════════════════════════ */
 :root {
-  --brand-color: #5248C1;
+  --brand-color: #5248C1; 
   --page-bg: #fff;
   --text-primary: #000;
 }
@@ -64,7 +64,7 @@
    ═══════════════════════════════════════════ */
 @page {
   size: letter;
-  margin: 0;
+  margin: 0 0.5in 0 0; /* No T/B/L margins to let flair + header tricks work */
 }
 
 /* ═══════════════════════════════════════════
@@ -130,11 +130,25 @@ html, body {
     print-color-adjust: exact;
   }
   .page {
-    padding: 0.45in 0.5in 0.45in 0.75in;
+    /* Side padding only. Top/Bottom handled by table spacer and @page. */
+    padding: 0 0 0 0.75in;
     box-shadow: none;
     position: relative;
-    --page-bg: #fff;
+    background: #fff;
     --text-primary: #000;
+  }
+  
+  .layout-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .page-top-spacer {
+    height: 0.45in;
+  }
+  
+  .page-bottom-spacer {
+    height: 0.45in;
   }
 }
 
@@ -157,7 +171,10 @@ html, body {
 @media print {
   .page::before {
     position: fixed;
-    height: 100%;
+    top: 0;
+    left: 0;
+    height: 11in;
+    width: 10px;
   }
 }
 
