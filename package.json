@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/dev.mjs",
+    "dev:recruiter": "RESUME_INCLUDE_PHONE=1 node scripts/dev.mjs",
     "build": "node scripts/build.mjs",
+    "build:recruiter": "RESUME_INCLUDE_PHONE=1 node scripts/build.mjs",
     "test": "npm run build && node scripts/verify.mjs",
     "preview": "npx -y serve dist"
   },

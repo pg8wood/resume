@@ -182,7 +182,8 @@ function buildSkills(skillsObj) {
 }
 
 // ── Main render function ──────────────────────────────
-export function renderHtml() {
+export function renderHtml(options = {}) {
+  const { includePhone = false, phoneNumber = process.env.PHONE_NUMBER } = options;
   const data = yaml.load(fs.readFileSync(YAML_PATH, "utf8"));
   let template = fs.readFileSync(TEMPLATE_PATH, "utf8");
   const rawStyles = fs.readFileSync(STYLES_PATH, "utf8");
@@ -191,10 +192,13 @@ export function renderHtml() {
   const name = FIELD.name(data);
   const contact = FIELD.contact(data);
 
-  if (process.env.PHONE_NUMBER) {
+  if (includePhone) {
+    if (!phoneNumber) {
+      throw new Error("RESUME_INCLUDE_PHONE is enabled, but PHONE_NUMBER is not set.");
+    }
     contact.phone = {
-      label: formatPhoneNumber(process.env.PHONE_NUMBER),
-      url: `tel:${process.env.PHONE_NUMBER}`,
+      label: formatPhoneNumber(phoneNumber),
+      url: `tel:${phoneNumber}`,
     };
   }
 

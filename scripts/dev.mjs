@@ -14,7 +14,8 @@ import { YAML_PATH, SRC_DIR, DIST_DIR, HTML_OUT, renderHtml } from "./render.mjs
 
 function rebuild() {
   try {
-    const html = renderHtml();
+    const includePhone = process.env.RESUME_INCLUDE_PHONE === "1";
+    const html = renderHtml({ includePhone });
     fs.mkdirSync(DIST_DIR, { recursive: true });
     fs.writeFileSync(HTML_OUT, html, "utf8");
     console.log(`✅ HTML rebuilt at ${new Date().toLocaleTimeString()}`);
