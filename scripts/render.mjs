@@ -77,6 +77,16 @@ export function inlineFonts(css) {
   });
 }
 
+function formatPhoneNumber(num) {
+  if (!num) return "";
+  const cleaned = num.replace(/\D/g, "");
+  const digits = (cleaned.length === 11 && cleaned.startsWith("1")) ? cleaned.substring(1) : cleaned;
+  if (digits.length === 10) {
+    return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+  }
+  return num;
+}
+
 function buildLinks(contact) {
   return Object.entries(contact)
     .map(([key, val]) => {
@@ -174,6 +184,14 @@ export function renderHtml() {
 
   const name = FIELD.name(data);
   const contact = FIELD.contact(data);
+
+  if (process.env.PHONE_NUMBER) {
+    contact.phone = {
+      label: formatPhoneNumber(process.env.PHONE_NUMBER),
+      url: `tel:${process.env.PHONE_NUMBER}`,
+    };
+  }
+
   const experience = FIELD.experience(data);
   const education = FIELD.education(data);
   const skills = FIELD.skills(data);
