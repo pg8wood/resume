@@ -169,6 +169,7 @@ function buildEducation(schools) {
 function buildSkills(skillsObj) {
   const labels = {
     mobile_development: "Mobile Development",
+    agentic_engineering: "Agentic AI & Engineering",
     tools: "Tools & Infrastructure",
   };
   return Object.entries(skillsObj)

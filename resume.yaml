@@ -164,28 +164,41 @@ skills:
     - Swift
     - SwiftUI
     - Swift Macros
+    - iOS
+    - tvOS
+    - macOS
     - UIKit
+    - XCTest / Swift Testing
+    - Swift Package Manager
+    - Accessibility
+    - Bazel
     - AVFoundation
     - AppKit
-    - XCTest
     - Core Data
     - Combine
     - Objective-C
-    - tvOS
+    - Protocol Buffers
     - ARKit
     - StoreKit 2
     - WidgetKit
     - App Intents
     - Live Activities
-    - Accessibility / VoiceOver
-    - CocoaPods
-    - SPM
-    - Bazel
-    - fastlane
-    - Protocol Buffers
+  agentic_engineering:
+    - Agentic Workflows
+    - Agent Orchestration
+    - Agentic Development
+    - MCP & MCP Development
+    - Agent Skills & Tool Definition
+    - Cursor
+    - Claude Code
+    - Antigravity
+    - Gemini
+    - GitHub Copilot
   tools:
     - git
     - GitHub Actions
+    - Azure DevOps
+    - Jenkins
     - LaunchDarkly
     - Datadog
     - Bugsnag
@@ -197,6 +210,5 @@ skills:
     - Homebrew
     - Vite
     - TypeScript
-    - Copilot for Xcode
-    - Cursor
+    - Coda/Notion development
     - Caddy
