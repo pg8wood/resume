@@ -118,10 +118,9 @@ work_experience:
           - >
             Served as lead iOS engineer and point of contact for CFA Institute for 8 months, setting delivery direction for
             the engagement.
-          - Built an automated test suite for CFA Institute and reduced regression testing time by 50%.
           - >
-            Architected Search and Member Renewal end-to-end for CFA Institute, delivering backend API architecture to
-            client engineers and implementing iOS and Android clients with Xamarin.
+            Built an automated test suite for CFA Institute and reduced regression testing time by 50%; architected Search
+            and Member Renewal end-to-end, including backend API architecture and Xamarin client implementations.
 
       - name: Vitality Group
         highlights:
@@ -142,11 +141,8 @@ work_experience:
             Co-defined and implemented a hands-free ARKit head-tracking and virtual-cursor system to enable communication
             for speech-impaired individuals.
           - >
-            Implemented localization and contributing guidelines to enable broader community localization support for
-            Vocable AAC.
-          - >
-            Open-sourced project materials to promote collaboration and led early communication with open-source
-            contributors.
+            Implemented localization and contributing guidelines, then open-sourced project materials and led early
+            communication with open-source contributors.
           - 2021 Webby Award winner and honoree; 2020 W3 Award winner in 3 categories.
 
 education:
@@ -157,37 +153,39 @@ education:
 skills:
   mobile_development:
     - Swift
+    - Swift Concurrency
     - SwiftUI
-    - Swift Macros
     - iOS
     - tvOS
-    - macOS
     - UIKit
-    - XCTest / Swift Testing
-    - Swift Package Manager
-    - Accessibility
-    - Bazel
-    - AVFoundation
-    - AppKit
     - Core Data
     - Combine
     - Objective-C
-    - Protocol Buffers
     - ARKit
     - StoreKit 2
-    - WidgetKit
-    - App Intents
-    - Live Activities
+    - Push Notifications
+    - Accessibility
+    - Localization
+    - XCTest
+    - Swift Testing
+  architecture_and_build_systems:
+    - App Modularization
+    - Composable Systems
+    - Swift Macros
+    - Swift Package Manager
+    - Bazel
+    - CI/CD Pipeline Automation
+    - Feature Flagging
+    - Crash Triage
+    - Metrics & Instrumentation
+    - Xcode Instruments
+    - TestFlight
   agentic_engineering:
     - Agentic Workflows
     - Agent Orchestration
-    - Agentic Development
     - MCP & MCP Development
-    - Agent Skills & Tool Definition
+    - LLM Integration
     - Cursor
-    - Claude Code
-    - Antigravity
-    - Gemini
     - GitHub Copilot
   tools:
     - git
@@ -198,12 +196,5 @@ skills:
     - Datadog
     - Bugsnag
     - Linear
-    - Jira
-    - Charles Proxy
-    - Proxyman
     - Bash
-    - Homebrew
-    - Vite
     - TypeScript
-    - Coda/Notion development
-    - Caddy
