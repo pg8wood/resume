@@ -39,7 +39,7 @@ jobs:
           github-token: ${{ secrets.WEBSITE_REPO_DISPATCH_TOKEN }}
           script: |
             await github.rest.repos.createDispatchEvent({
-              owner: "patrickgatewood",
+              owner: "pg8wood",
               repo: "website",
               event_type: "resume-updated",
               client_payload: {
