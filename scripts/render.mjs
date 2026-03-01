@@ -16,7 +16,8 @@ export const TEMPLATE_PATH = path.join(ROOT, "src", "template.html");
 export const STYLES_PATH = path.join(ROOT, "src", "styles.css");
 export const DIST_DIR = path.join(ROOT, "dist");
 export const HTML_OUT = path.join(DIST_DIR, "resume.html");
-export const PDF_OUT = path.join(DIST_DIR, "resume.pdf");
+const currentYear = new Date().getFullYear();
+export const PDF_OUT = path.join(DIST_DIR, `PatrickGatewoodResume-${currentYear}.pdf`);
 export const SRC_DIR = path.join(ROOT, "src");
 
 // ── Font Awesome icon loader ──────────────────────────
@@ -41,7 +42,7 @@ const FIELD = {
 
 // ── Link icons ─────────────────────────────────────────
 const LINK_ICON_MAP = {
-  website:  { name: "house",    category: "solid",  yOffset: -0.25 },
+  website:  { name: "house",    category: "solid",  yOffset: -0.225 },
   github:   { name: "github",   category: "brands", yOffset: 0 },
   linkedin: { name: "linkedin", category: "brands", yOffset: 0 },
   email:    { name: "envelope", category: "solid",  yOffset: 0.5 },
