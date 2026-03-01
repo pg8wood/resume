@@ -1,0 +1,333 @@
+/* ═══════════════════════════════════════════
+   Fonts — Spectral
+   ═══════════════════════════════════════════ */
+@font-face {
+  font-family: 'Spectral';
+  src: url('fonts/Spectral-2/Spectral-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('fonts/Spectral-2/Spectral-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('fonts/Spectral-2/Spectral-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('fonts/Spectral-2/Spectral-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('fonts/Spectral-2/Spectral-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('fonts/Spectral-2/Spectral-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* ═══════════════════════════════════════════
+   Paged Media
+   ═══════════════════════════════════════════ */
+@page {
+  size: letter;
+  margin: 0.45in 0.5in 0.45in 0.75in;
+}
+
+/* ═══════════════════════════════════════════
+   Reset
+   ═══════════════════════════════════════════ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Spectral', Georgia, 'Times New Roman', serif;
+  font-size: 9.5pt;
+  line-height: 1.32;
+  color: #1a1a1a;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* ═══════════════════════════════════════════
+   Screen Preview — show "sheet of paper"
+   ═══════════════════════════════════════════ */
+@media screen {
+  html {
+    background: #444;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  .page {
+    background: #fff;
+    width: 8.5in;
+    min-width: 8.5in;
+    max-width: 8.5in;
+    min-height: 11in;
+    padding: 0.45in 0.5in 0.45in 0.75in;
+    box-shadow: 0 6px 30px rgba(0,0,0,0.35);
+    position: relative;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   Print — strip chrome, keep content
+   ═══════════════════════════════════════════ */
+@media print {
+  html, body {
+    background: none;
+  }
+  .page {
+    padding: 0;
+    box-shadow: none;
+    position: relative;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   Left Accent Bar
+   ═══════════════════════════════════════════ */
+.page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: #5248C1;
+}
+
+@media print {
+  .page::before {
+    left: -0.75in;
+    width: 8px;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   Header
+   ═══════════════════════════════════════════ */
+.header {
+  margin-bottom: 4px;
+  padding-left: 8px;
+}
+
+.name {
+  margin: 0 0 6px 0;
+  font-family: 'Spectral', Georgia, 'Times New Roman', serif;
+  font-size: 30pt;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.2px;
+  line-height: 1.1;
+}
+
+.header-line {
+  border: none;
+  border-top: 4px solid #5248C1;
+  margin: 0 0 6px 0;
+}
+
+.links-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 8.5pt;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.links-row a {
+  color: #333;
+  text-decoration: none;
+}
+
+.links-row a:hover {
+  text-decoration: underline;
+}
+
+.link-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.link-icon {
+  font-size: 9pt;
+}
+
+/* ═══════════════════════════════════════════
+   Sections
+   ═══════════════════════════════════════════ */
+.section {
+  margin-top: 10px;
+  padding-left: 8px;
+}
+
+.section-title {
+  font-size: 14pt;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-icon {
+  font-size: 14pt;
+  color: #5248C1;
+}
+
+/* ═══════════════════════════════════════════
+   Jobs
+   ═══════════════════════════════════════════ */
+.job {
+  margin-bottom: 8px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1px;
+}
+
+.job-company-title {
+  font-size: 11pt;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.job-company-title .separator {
+  font-weight: 400;
+  color: #555;
+  margin: 0 4px;
+}
+
+.job-company-title .title {
+  font-weight: 400;
+  color: #333;
+}
+
+.job-dates {
+  font-size: 9pt;
+  color: #333;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.job-progression {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 8.5pt;
+  color: #444;
+  margin-bottom: 3px;
+  margin-top: 1px;
+}
+
+.job-progression .prog-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.job-progression .prog-year {
+  font-weight: 600;
+}
+
+.job-progression .prog-dot {
+  color: #888;
+}
+
+.job-bullets {
+  margin: 2px 0 0 0;
+  padding-left: 14px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.job-bullets li {
+  margin-bottom: 2px;
+}
+
+/* Project sub-sections within a job */
+.job-project {
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.job-project-name {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 2px;
+}
+
+.additional-clients {
+  font-size: 8.5pt;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* ═══════════════════════════════════════════
+   Education
+   ═══════════════════════════════════════════ */
+.education-item {
+  margin-bottom: 4px;
+}
+
+.education-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.education-details strong {
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.education-year {
+  font-size: 9pt;
+  color: #333;
+}
+
+/* ═══════════════════════════════════════════
+   Skills
+   ═══════════════════════════════════════════ */
+.skills-group {
+  margin-bottom: 4px;
+}
+
+.skills-group-label {
+  font-weight: 700;
+  font-size: 9pt;
+  color: #1a1a1a;
+}
+
+.skills-list {
+  font-size: 9pt;
+  color: #333;
+}
