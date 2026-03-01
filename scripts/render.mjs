@@ -157,7 +157,11 @@ function buildExperience(jobs) {
 function buildEducation(schools) {
   return schools
     .map((s) => {
-      return `<div class="education-item"><div class="education-details"><span><strong>${escapeHtml(s.institution)}</strong> — ${escapeHtml(s.degree)}</span><span class="education-year">${escapeHtml(String(s.year ?? ""))}</span></div></div>`;
+      return `
+        <div class="education-item">
+          <div class="education-institution"><strong>${escapeHtml(s.institution)}</strong></div>
+          <div class="education-degree-year">${escapeHtml(s.degree)} <span class="separator">|</span> ${escapeHtml(String(s.year ?? ""))}</div>
+        </div>`.trim();
     })
     .join("");
 }

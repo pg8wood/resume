@@ -240,8 +240,6 @@ html, body {
 
 .job {
   margin-bottom: 8px;
-  break-inside: avoid;
-  page-break-inside: avoid;
 }
 
 .job-header {
@@ -249,6 +247,8 @@ html, body {
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 1px;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .job-company-title {
@@ -298,8 +298,6 @@ html, body {
 .job-bullets {
   margin: 2px 0 0 0;
   padding-left: 14px;
-  break-inside: avoid;
-  page-break-inside: avoid;
 }
 
 .job-bullets li {
@@ -327,22 +325,21 @@ html, body {
    Education
    ═══════════════════════════════════════════ */
 .education-item {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
-.education-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+.education-institution {
+  font-size: 11pt;
+  font-weight: 500;
 }
 
-.education-details strong {
-  font-weight: 700;
+.education-degree-year {
   font-size: 10pt;
 }
 
-.education-year {
-  font-size: 9pt;
+.education-degree-year .separator {
+  font-weight: 400;
+  margin: 0 4px;
 }
 
 /* ═══════════════════════════════════════════
