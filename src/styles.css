@@ -64,7 +64,7 @@
    ═══════════════════════════════════════════ */
 @page {
   size: letter;
-  margin: 0.45in 0.5in 0.45in 0.75in;
+  margin: 0;
 }
 
 /* ═══════════════════════════════════════════
@@ -126,13 +126,15 @@ html, body {
 @media print {
   html, body {
     background: none;
-    --text-primary: #000;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
   .page {
-    padding: 0;
+    padding: 0.45in 0.5in 0.45in 0.75in;
     box-shadow: none;
     position: relative;
     --page-bg: #fff;
+    --text-primary: #000;
   }
 }
 
@@ -144,15 +146,18 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 15px;
+  width: 10px;
   height: 100%;
   background: var(--brand-color);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  z-index: 10;
 }
 
 @media print {
   .page::before {
-    left: -0.75in;
-    width: 15px;
+    position: fixed;
+    height: 100%;
   }
 }
 
