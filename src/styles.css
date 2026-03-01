@@ -3,6 +3,18 @@
    ═══════════════════════════════════════════ */
 @font-face {
   font-family: 'Spectral';
+  src: url('fonts/Spectral/Spectral-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('fonts/Spectral/Spectral-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spectral';
   src: url('fonts/Spectral/Spectral-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
@@ -153,7 +165,7 @@ html, body {
 }
 
 .name {
-  margin: 0 0 6px 0;
+  margin: 0 0 0 0;
   font-family: 'Spectral', Georgia, 'Times New Roman', serif;
   font-size: 30pt;
   font-weight: 700;
@@ -161,18 +173,13 @@ html, body {
   line-height: 1.1;
 }
 
-.header-line {
-  border: none;
-  border-top: 4px solid var(--brand-color);
-  margin: 0 0 6px 0;
-}
-
 .links-row {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   font-size: 8.5pt;
-  margin-bottom: 2px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .links-row a {
@@ -195,6 +202,12 @@ html, body {
   color: var(--brand-color);
 }
 
+.header-line {
+  border: none;
+  border-top: 4px solid var(--brand-color);
+  margin-bottom: 16px;
+}
+
 /* ═══════════════════════════════════════════
    Sections
    ═══════════════════════════════════════════ */
@@ -204,7 +217,7 @@ html, body {
 }
 
 .section-title {
-  font-size: 14pt;
+  font-size: 18pt;
   font-weight: 700;
   margin: 0 0 6px 0;
   display: flex;
@@ -227,6 +240,8 @@ html, body {
 
 .job {
   margin-bottom: 8px;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .job-header {
@@ -237,7 +252,7 @@ html, body {
 }
 
 .job-company-title {
-  font-size: 11pt;
+  font-size: 16pt;
   font-weight: 500;
 }
 
@@ -247,7 +262,8 @@ html, body {
 }
 
 .job-company-title .title {
-  font-weight: 400;
+  font-size: 14pt;
+  font-weight: 300;
 }
 
 .job-dates {
