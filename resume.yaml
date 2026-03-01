@@ -84,31 +84,75 @@ work_experience:
     projects:
       - name: FOX Consumer Products & Engineering
         highlights:
-          - Architected and implemented tvOS support and cross-platform features for a shared mobile video player SDK.
+          - >
+            Architected and implemented tvOS support and cross-platform features for FOX's shared mobile video player SDK,
+            enabling reuse across the FOX app suite.
           - >
             Served as tvOS tech lead for FOX app suite integrations (FOX Now, Sports, Weather, Nation, News
-            International), enabling partner app teams as an embedded SDK resource.
-          - Automated key continuous delivery pipeline steps and reduced release cycle time by 25% based on pipeline data.
+            International), enabling partner app teams to ship SDK integrations with consistent patterns.
           - >
-            Built and open-sourced an automated Changelog Generator, standardizing release notes and saving dozens of
-            hours each cycle that had been spent resolving changelog merge conflicts.
+            Automated key continuous delivery pipeline steps for FOX video SDK releases and reduced release cycle time by
+            25% based on pipeline data.
+          - >
+            Built and open-sourced an automated Changelog Generator for FOX release workflows, saving dozens of hours
+            each cycle that had been spent resolving changelog merge conflicts.
+          - >
+            Evangelized SharePlay by building and demoing a proof of concept to FOX and WillowTree VP/C-level
+            stakeholders, securing program-level buy-in.
+
+      - name: FOX Television Stations
+        highlights:
+          - >
+            Created 8 FOX Television Stations apps using a white-label architecture and scaled CI infrastructure to support
+            27 white-label apps.
           - >
             Identified a recurring 10 person-hour per sprint cost from .xcodeproj merge conflicts on a 50-person team and
             set direction on generated project files. Rolled out XcodeGen by replacing an ~80,000-line .pbxproj with a
             ~200-line YAML definition adopted across 27 white-label apps.
+
+      - name: WillowTree Live Apps Team
+        highlights:
+          - >
+            Onboarded and maintained 10 inherited, mature codebases and ingested CI/CD pipelines into WillowTree's stack,
+            establishing standardized release ownership across the portfolio.
+          - >
+            Delivered an emergency Wyndham Hotels COVID-19 guest-guidance feature and was named by the client as a
+            reason for contract renewal.
+
+      - name: CFA Institute
+        highlights:
+          - >
+            Served as lead iOS engineer and point of contact for CFA Institute for 8 months, setting delivery direction for
+            the engagement.
+          - Built an automated test suite for CFA Institute and reduced regression testing time by 50%.
+          - >
+            Architected Search and Member Renewal end-to-end for CFA Institute, delivering backend API architecture to
+            client engineers and implementing iOS and Android clients with Xamarin.
+
+      - name: Locus Health
+        highlights:
+          - >
+            Discovered, raised, and fixed a privacy issue where stored health data did not meet encryption guidelines, then
+            collaborated on architecture and code review for an Amazon Cognito 2-factor authentication rollout.
+
+      - name: PepsiCo
+        highlights:
+          - >
+            Consolidated redundant API call implementations into a generic API client, led Swift 4 migration to Codable
+            types, and removed a third-party JSON decoding library.
 
       - name: Vocable AAC
         highlights:
           - >
             Co-defined and implemented a hands-free ARKit head-tracking and virtual-cursor system to enable communication
             for speech-impaired individuals.
+          - >
+            Implemented localization and contributing guidelines to enable broader community localization support for
+            Vocable AAC.
+          - >
+            Open-sourced project materials to promote collaboration and led early communication with open-source
+            contributors.
           - 2021 Webby Award winner and honoree; 2020 W3 Award winner in 3 categories.
-
-    additional_clients:
-      - Wyndham Hotels
-      - PepsiCo
-      - CFA Institute
-      - Locus Health
 
 education:
   - institution: Virginia Polytechnic Institute and State University
