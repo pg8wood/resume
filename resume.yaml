@@ -74,13 +74,7 @@ work_experience:
 
   - company: WillowTree, LLC
     dates: July 2018 - August 2022
-    progression:
-      - year: 2018
-        title: Software Engineer
-      - year: 2020
-        title: Platform Software Engineer
-      - year: 2021
-        title: Senior Software Engineer
+    title: Senior iOS Engineer
     projects:
       - name: FOX Consumer Products & Engineering
         highlights:
