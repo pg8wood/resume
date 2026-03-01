@@ -28,11 +28,13 @@ async function main() {
   });
   await browser.close();
   console.log(`✅ PDF written to ${PDF_OUT}`);
-  
-  // Automatically open the PDF
-  import("node:child_process").then(({ exec }) => {
-    exec(`open "${PDF_OUT}"`);
-  });
+
+  // Local convenience only: avoid attempting to open files in CI/non-macOS runners.
+  if (!process.env.CI && process.platform === "darwin") {
+    import("node:child_process").then(({ exec }) => {
+      exec(`open "${PDF_OUT}"`);
+    });
+  }
 }
 
 main().catch((err) => {
