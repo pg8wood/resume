@@ -3,39 +3,46 @@
    ═══════════════════════════════════════════ */
 @font-face {
   font-family: 'Spectral';
-  src: url('fonts/Spectral-2/Spectral-Regular.ttf') format('truetype');
+  src: url('fonts/Spectral/Spectral-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Spectral';
-  src: url('fonts/Spectral-2/Spectral-Italic.ttf') format('truetype');
+  src: url('fonts/Spectral/Spectral-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: 'Spectral';
-  src: url('fonts/Spectral-2/Spectral-Medium.ttf') format('truetype');
+  src: url('fonts/Spectral/Spectral-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'Spectral';
-  src: url('fonts/Spectral-2/Spectral-SemiBold.ttf') format('truetype');
+  src: url('fonts/Spectral/Spectral-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: 'Spectral';
-  src: url('fonts/Spectral-2/Spectral-Bold.ttf') format('truetype');
+  src: url('fonts/Spectral/Spectral-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'Spectral';
-  src: url('fonts/Spectral-2/Spectral-ExtraBold.ttf') format('truetype');
+  src: url('fonts/Spectral/Spectral-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
+}
+
+/* ═══════════════════════════════════════════
+   Design Tokens
+   ═══════════════════════════════════════════ */
+:root {
+  --brand-color: #5248C1;
 }
 
 /* ═══════════════════════════════════════════
@@ -110,15 +117,15 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 8px;
+  width: 15px;
   height: 100%;
-  background: #5248C1;
+  background: var(--brand-color);
 }
 
 @media print {
   .page::before {
     left: -0.75in;
-    width: 8px;
+    width: 15px;
   }
 }
 
@@ -142,7 +149,7 @@ html, body {
 
 .header-line {
   border: none;
-  border-top: 4px solid #5248C1;
+  border-top: 4px solid var(--brand-color);
   margin: 0 0 6px 0;
 }
 
@@ -170,8 +177,9 @@ html, body {
   gap: 4px;
 }
 
-.link-icon {
-  font-size: 9pt;
+.link-item svg {
+  flex-shrink: 0;
+  color: var(--brand-color);
 }
 
 /* ═══════════════════════════════════════════
@@ -192,9 +200,9 @@ html, body {
   gap: 8px;
 }
 
-.section-icon {
-  font-size: 14pt;
-  color: #5248C1;
+.section-title svg {
+  flex-shrink: 0;
+  color: var(--brand-color);
 }
 
 /* ═══════════════════════════════════════════
